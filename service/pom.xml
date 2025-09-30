@@ -253,7 +253,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<release>11</release>
+					<release>25</release>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -269,9 +269,13 @@
 				<configuration>
 					<useSystemClassLoader>false</useSystemClassLoader>
 					<argLine>
-						--illegal-access=warn
+						--add-opens=java.base/java.lang=ALL-UNNAMED
+						--add-opens=java.base/java.util=ALL-UNNAMED
+						--add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+						--add-opens=java.base/java.text=ALL-UNNAMED
+						--add-opens=java.desktop/java.awt.font=ALL-UNNAMED
 					</argLine>
-					<argLine>@{argLine} -Xmx1024m -XX:MaxPermSize=256m</argLine>
+					<argLine>@{argLine} -Xmx1024m</argLine>
 					<includes>
 						<include>**/*Spec.java</include>
 						<include>**/*Test.java</include>

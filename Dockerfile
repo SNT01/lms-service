@@ -1,4 +1,4 @@
-FROM sunbird/openjdk-java11-alpine:latest
+FROM eclipse-temurin:25-jdk-alpine
 RUN apk update \
     && apk upgrade \
     && apk add --no-cache unzip curl \

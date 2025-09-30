@@ -13,7 +13,7 @@ This readme file contains the instruction to set up and run the sunbird-course-s
 
 ### Prerequisites
 
-- Java 11
+- Java 25
 - Latest Docker
 - Latest Maven 
   (Only for Mac M1 use 3.8.8 Maven version)

@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM eclipse-temurin:25-jdk-alpine
 MAINTAINER "Manojv" "manojv@ilimi.in"
 WORKDIR /opt
 RUN apk update \
